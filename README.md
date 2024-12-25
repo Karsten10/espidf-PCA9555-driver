@@ -1,7 +1,15 @@
-# NXP PCA555 Driver
-Very simple implementation for reading registers and inputs on certain pins.
+# PCA555 Driver for ESP-IDF
+Very simple implementation of a driver for the PCA9555 package, specifically for espidf.
 
-# TODO
-- Add support for outputting on pins
-- Wrapper function for getting state of output pin
-- Wrapper function for setting state of output pin
+Works with the PCA9555 of NXP, as well as the PCA9555 of TI. 
+
+The PCA9555 is available in the following packages:
+PACKAGE     | NXP   |   TI
+---------------------------
+PCA9555DB   |yes    | yes
+PCA9555PW   |yes    | yes
+PCA9555BS   |yes    | no
+PCA9555HF   |yes    | no
+PCA9555DBQ  |no     | yes
+PCA9555DGV  |no     | yes
+PCA9555DW   |no     | yes
