@@ -11,14 +11,14 @@ enum IO{
 
 typedef union {
     struct {
-        uint8_t P7:1;
-        uint8_t P6:1;
-        uint8_t P5:1;
-        uint8_t P4:1;
-        uint8_t P3:1;
-        uint8_t P2:1;
-        uint8_t P1:1;
-        uint8_t P0:1;
+        uint8_t CH7:1;
+        uint8_t CH6:1;
+        uint8_t CH5:1;
+        uint8_t CH4:1;
+        uint8_t CH3:1;
+        uint8_t CH2:1;
+        uint8_t CH1:1;
+        uint8_t CH0:1;
     } reg __attribute__((packed));
     uint8_t unsigned_val;           // Access as packed uint8_t
 } port_config_t;

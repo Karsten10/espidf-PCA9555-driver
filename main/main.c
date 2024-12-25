@@ -51,6 +51,6 @@ void app_main()
 	}
 
 	// Changing settings can be done as follows
-	p0_cfg.reg.P7 = 0;
+	p0_cfg.reg.CJ7 = 0;
 	PCA555_write_settings(i2c_dev_handle, p0_cfg, p1_cfg);
 }
